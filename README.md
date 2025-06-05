@@ -1,2 +1,2 @@
-# Website
-- a HTML code I created during my internship at Omesti SdnBhd
+- WEBSITE - 
+During my internship at Omesti Sdn Bhd, I developed a responsive website using HTML, CSS, and Bootstrap. The project involved designing a clean, user-friendly interface and implementing layout components such as navigation bars, cards, forms, and grids using Bootstrap's framework. The site was optimized for both desktop and mobile viewing, with attention to modern UI/UX practices to enhance usability and aesthetics.
