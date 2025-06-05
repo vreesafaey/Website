@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#title">Logo</a>
+            <a href="bracnhes.html">Branches</a>
+			<div class ="dropdown">
+				<a href="#about">About Us</a>
+				<ul class= "dropdown-content" >
+					<li><a href="#">Our Mission</a></li>
+					<li><a href="#">Our Team</a></li>
+					<li><a href="#">History</a></li>
+				</ul>
+			</div>
+        </div>
+		<a href= "join.html">
+			<button class="join" >Join Us</button>
+		</a>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1> Header </h1>
+        <p> slogan</p>
+    </header>
+
+    <!-- Search Bar Section with Dropdown -->
+    <section class="search-bar">
+        <div class="container">
+            <form class="search-form">
+                <input type="text" placeholder="Search" class="search-input">
+                <select class="search-input">
+                    <option value="">Option 1</option>
+                    <option value="">Option 2</option>
+                    <option value="">Option 3</option>
+                    <option value="">Option 4</option>
+                </select>
+                <!-- Dropdown as part of search bar -->
+                <select class="search-input">
+                    <option value="">Service 1</option>
+                    <option value="">Service 2</option>
+                    <option value="">Service 3</option>
+                </select>
+                <button type="submit" class="btn-search">Search</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Types Section -->
+    <section class="types">
+        <div class="container">
+            <h2> Types</h2>
+            <div class="grid">
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
+            </div>
+        </div>
+    </section>
+
+	<div class ="slider" >
+		<div class ="slides">
+			<div class="slide">
+				<img src= "https://placehold.co/400x200" alt= "image1">
+				<p>image1 </p>
+			</div>
+			<!-- Slide 2 -->
+			<div class="slide">
+				<img src="https://placehold.co/400x200" alt="Image 2">
+				<p>image2 </p>
+			</div>
+			<!-- Slide 3 -->
+			<div class="slide">
+				<img src="https://placehold.co/400x200" alt="Image 3">
+				<p>image3 </p>
+			</div>
+			<!-- Slide 4 -->
+			<div class="slide">
+				<img src="https://placehold.co/400x200" alt="Image 4">
+				<p>image4 </p>
+			</div>
+			
+			
+		</div>
+		<button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+		<button class="next" onclick="changeSlide(1)">&#10095;</button>
+
+	</div>
+    <!-- Inline JavaScript -->
+	<script>
+	let currentSlide = 0;
+	const slides = document.querySelectorAll('.slide');
+	const totalSlides = slides.length;
+
+	document.querySelector('.next').addEventListener('click', () => {
+		currentSlide = (currentSlide + 1) % totalSlides;
+		updateSlidePosition();
+	});
+
+	document.querySelector('.prev').addEventListener('click', () => {
+		currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+		updateSlidePosition();
+	});
+
+	function updateSlidePosition() {
+		document.querySelector('.slides').style.transform = `translateX(-${currentSlide * 100}%)`;
+	}
+	</script>
+	
+
+    <!-- Footer Section with Address -->
+    <footer class="footer">
+        <div class="container">
+			<p>Contast us: </p>
+            <p>Street, City, Address</p>
+            <p>Phone: +123 456 789</p>
+            <p>Email: info@.com</p>
+        </div>
+    </footer>
+</body>
+</html>

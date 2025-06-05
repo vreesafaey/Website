@@ -1,0 +1,173 @@
+:root {
+    --dark-green: #145a32;
+}
+
+body{
+	color: #FFD580;
+}
+
+/* .name {
+    display: flex;
+    gap: 20px; 
+    flex-wrap: wrap; 
+    align-items: flex-start; 
+	text-align: left;
+}  */
+
+.input-container {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-container label {
+    align-items: left; 
+    margin-bottom: 5px; 
+	
+}
+
+.input-container input {
+    width: 100%; /* Ensures the input takes the full width */
+    padding: 10px; /* Increases the input padding for a larger text box */
+    font-size: 16px; /* Increases font size inside the text box */
+    border-radius: 5px; /* Adds rounded corners to the input box */
+    border: 2px solid #ccc; /* Gives the input a slightly thicker border */
+}
+
+
+h1,p {
+    text-align: center !important;
+    color: var(--dark-green);
+}
+
+p{
+	text-align: left;
+}
+
+input, select {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.select2-container{
+	box-sizing: border-box;
+    margin: 0;
+    position: relative;
+    vertical-align: ;
+}
+
+
+.join-container {
+    width: 700px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    border: 2px double #333;
+    border-radius: 10px;
+    background-color: #fdfdfd;
+}
+
+
+/* Table Style */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 20px 0;
+}
+th, td {
+	border: 1px solid black;
+	padding: 5psx;
+	text-align: left;
+}
+th {
+	background-color: #f2f2f2 ;
+}
+.checkbox-center {
+	justify-content: center;
+	align-items: center;
+}
+input[type="text"], textarea {
+	width: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+
+
+/* Responsive Layout for Address and State */
+@media (max-width: 767.98px) {
+    .form-group, .name {
+        width: 100%;
+    }
+}
+
+
+
+.btn-primary {
+    background-color: var(--dark-green) !important;
+    border-color: var(--dark-green)!important;
+    color: white; 
+}
+
+
+.btn-primary:hover {
+    background-color: #0e3e21!important;
+    border-color: #0e3e21!important;
+}
+
+
+
+
+
+
+
+
+
+
+/* .form-group {
+    margin-bottom: 20px;
+} */
+
+/* label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+} */
+
+/* input[type="text"],
+input[type="email"],
+select {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+ */
+/* button{
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+	margin-top: 50px;
+
+} */
+/* 
+button {
+    background-color: #e67e22;
+}
+
+button:hover {
+    background-color: #d35400;
+} */
+
+/* button.submit-btn:hover {
+    background-color: #f39c12;
+} */
+
+
